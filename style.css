@@ -1,0 +1,125 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Global
+===============
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+}
+
+textarea, input {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+    
+button {
+    padding: 10px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    background-color: rgb(40, 40, 40);
+}
+
+
+/*
+=============== 
+Header
+===============
+*/ 
+header {
+    /* background-color: rgb(241, 241, 241); */
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.title {
+    text-align: center;
+}
+
+
+/*
+=============== 
+Main
+===============
+*/ 
+.form {
+    display: block;
+    width: 800px;
+}
+
+.form input {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+#generate-string {
+    background-color: rgb(68, 159, 71);
+    display: block;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+#generate-string:hover {
+    background-color: rgb(56, 129, 59);
+}
+
+#download-btn, #copy-btn {
+    margin-top: 10px;
+}
+
+
+/*
+=============== 
+Footer
+===============
+*/ 
+footer {
+    /* background-color: rgb(241, 241, 241); */
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+
+
