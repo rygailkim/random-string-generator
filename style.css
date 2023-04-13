@@ -53,6 +53,29 @@ button:hover{
     background-color: rgb(40, 40, 40);
 }
 
+.tooltip {
+    position: relative;
+    z-index: 1;
+    left: 15%;
+    bottom: 85px;
+    display: none;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
 
 /*
 =============== 
@@ -86,15 +109,14 @@ Main
     margin-top: 3px;
 }
 
-#generate-string {
+#generate-string-btn {
     background-color: rgb(68, 159, 71);
     display: block;
-    width: 100%;
     margin-bottom: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-#generate-string:hover {
+#generate-string-btn:hover {
     background-color: rgb(56, 129, 59);
 }
 
@@ -120,6 +142,8 @@ footer {
 .footer-text {
     text-align: center;
 }
+
+
 
 
 
