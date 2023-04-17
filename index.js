@@ -20,6 +20,13 @@ document.getElementById("copy-btn").onclick = function() {
     });
 }
 
+document.getElementById("download-btn").onclick = function(){
+    const filename = "test_data.txt";
+    const content = document.getElementById("string-output").value;
+
+    downloadFile(filename, content);
+}
+
 function convertRegexInput(regexInput, qty) {
     let outputs = [];
     qty = Number(qty);
@@ -39,4 +46,27 @@ function showTooltip(message) {
     setTimeout(() => {
       tooltip.style.display = 'none';
     }, 2000);
-  }
+}
+
+function downloadFile(filename, content){
+  const element = document.createElement('a');
+
+    const blob = new Blob([content], {
+      type: 'plain/text'
+    });
+
+    const fileUrl = URL.createObjectURL(blob);
+    
+    element.setAttribute('href', fileUrl);
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+
+    document.body.appendChild(element);
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+
+
